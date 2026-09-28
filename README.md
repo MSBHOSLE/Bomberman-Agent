@@ -1,6 +1,11 @@
 # `hybrid_q_agent`: Reinforcement Learning Agent for Bomberman
 
-An autonomous reinforcement learning agent developed for the **Bomberman RL** environment (Machine Learning Essentials, Summer Semester 2026).
+This project is developed for the Machine Learning Essentials Final Project at Heidelberg University.
+
+**Framework:**  
+https://github.com/ukoethe/bomberman_rl
+
+Clone the official framework and copy the agents from this repository into its `agent_code/` directory.
 
 **Team**: Khaleesi  
 **Authors**: Mahesh Bhosle & Rajul Jain  
@@ -42,6 +47,7 @@ Rank  | Agent                  |   Score | Avg/Rnd |  Coins |  Kills |  Suicides
 ├── scoreboard.py       # Automated tournament evaluation script
 ├── model.pt            # Final trained 24-feature champion weight vector (L2 norm = 56.58)
 ├── MODEL_HISTORY.md    # Full checkpoint history, ablations, and verification checksums
+├── requirements.txt    # Project dependencies
 └── README.md           # Project documentation
 ```
 
@@ -50,5 +56,7 @@ Rank  | Agent                  |   Score | Avg/Rnd |  Coins |  Kills |  Suicides
 ## 🛠️ Requirements
 
 - Python 3.8+
-- `numpy`
-- `scikit-learn==1.9.0` (for `pretrain.py`)
+- Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
